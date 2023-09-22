@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Phishing Site Checker</title>
   </head>
+
   <body>
     <div class="container">
       <h1>Phishing Site Checker</h1>
@@ -13,7 +15,14 @@
         <div class="progress"></div>
       </div>
       <p id="url-display" class="result-loading">Loading...</p>
+
+      <div id="url-info">
+        <strong>Checking URL:</strong> <span id="url-text"></span>
+      </div>
+
+      <button id="refresh-button">Refresh</button>
     </div>
     <script src="script.js"></script>
   </body>
+
 </html>

@@ -1,8 +1,13 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f5f5f5;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -17,10 +22,11 @@ body {
 
 h1 {
     color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Add styles for the progress bar */
-/* Center the progress bar */
+/* Progress bar styles */
 .progress-container {
     display: flex;
     justify-content: center;
@@ -28,11 +34,10 @@ h1 {
     height: 100px;
 }
 
-
 .progress {
+    margin: auto;
     width: 40px;
     height: 40px;
-    margin: auto;
     border: 3px solid transparent;
     border-top: 3px solid #3498db;
     border-radius: 50%;
@@ -40,10 +45,16 @@ h1 {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+/* Result display styles */
 p {
     font-size: 24px;
     color: #555;
@@ -54,6 +65,7 @@ p {
     display: none;
 }
 
+/* Background colors for different result types */
 .result-loading {
     background-color: #f9f9f9;
 }
@@ -66,4 +78,32 @@ p {
 .result-safe {
     background-color: #99ff99;
     color: #333;
+}
+
+/* URL information styles */
+#url-info {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#url-text {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Refresh button styles */
+#refresh-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#refresh-button:hover {
+    background-color: #2581c3;
 }

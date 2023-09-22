@@ -14,7 +14,7 @@ CORS(app)
 #     model = pickle.load(model_file)
 
 loaded_model = pickle.load(
-    open(r'XgClassifierModel.pk1', 'rb'))
+    open('back-end\XgClassifierModel.pk1', 'rb'))
 
 
 # Load the model using the new version of XGBoost
