@@ -1,0 +1,16 @@
+# Exclude virtual environment directory
+myenv/
+venv/
+
+# Exclude Python bytecode files
+__pycache__/
+
+# Exclude Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Exclude local development settings (e.g., IDE-specific files)
+.vscode/
+.idea/
+
+# Exclude environment-specific files (e.g., .env, .env.local)
+.env*
