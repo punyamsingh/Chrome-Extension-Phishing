@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "URL Capture Extension",
+    "version": "1.0",
+    "description": "Captures the URL of every site the user visits",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "webNavigation"
+    ],
+   
+  
+    "icons": {
+      "48": "logo.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+      }
+    }
+  }
+  
