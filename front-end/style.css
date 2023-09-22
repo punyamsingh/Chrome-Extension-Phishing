@@ -1,17 +1,15 @@
 body {
-
     background-color: #f5f5f5;
     font-family: Arial, sans-serif;
-    margin: 15;
+    margin: 0;
     padding: 0;
-    border-radius: 25;
 }
 
 .container {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 500px; /* Keep the width as desired */
+    width: 500px;
     margin: 40px auto;
     padding: 20px;
     text-align: center;
@@ -21,17 +19,39 @@ h1 {
     color: #333;
 }
 
-.content {
-    margin-top: 20px;
+/* Add styles for the progress bar */
+/* Center the progress bar */
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+.progress {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border: 3px solid transparent;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 p {
-    font-size: 18px;
+    font-size: 24px;
     color: #555;
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    display: none;
 }
 
 .result-loading {
@@ -39,35 +59,11 @@ p {
 }
 
 .result-phishing {
-    background-color: #ff9999; /* Red background for phishing sites */
-    color: #fff; /* White text for better visibility */
+    background-color: #ff9999;
+    color: #fff;
 }
 
 .result-safe {
-    background-color: #99ff99; /* Green background for safe sites */
-    color: #333; /* Dark text for better visibility */
+    background-color: #99ff99;
+    color: #333;
 }
-
-
-.progress-container {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin: 20px auto;
-  }
-  
-  .progress {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 3px solid transparent;
-    border-top: 3px solid #3498db; /* Change the color as needed */
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    display: none; /* Initially hidden */
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
