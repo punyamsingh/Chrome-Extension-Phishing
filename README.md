@@ -4,6 +4,8 @@
 
 This project aims to develop a Chrome extension that leverages AI/ML to detect phishing domains that imitate the look and feel of genuine domains. The extension extracts URLs, sends them to a Flask server, which further utilizes a Python feature extraction module and an ML model to predict if a website is legitimate or phishing.
 
+pptlink: https://docs.google.com/presentation/d/1uqInSDOHwI_AVtu630Lfhqt-IUrCB_YhHqJslKlUMBM/edit?usp=sharing
+
 ## Workflow
 
 1. **Chrome Extension**: The extension extracts URLs from the browser.
