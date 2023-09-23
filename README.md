@@ -22,6 +22,13 @@ This project aims to develop a Chrome extension that leverages AI/ML to detect p
    - If the prediction is 1, the website is considered legitimate.
    - If the prediction is 0, the website is identified as phishing.
 
+## Model Details
+
+- Model Used: XGBoost
+- Accuracy Achieved: 97.0%
+- Number of Features: 30
+- Future Plan: The future plan is to enhance the model by adding Reinforcement Learning from Human Feedback (RLHF) to improve its phishing detection capabilities further.
+
 ## Dependencies
 
 - Chrome Browser: The extension relies on the Chrome web browser as its primary platform.
